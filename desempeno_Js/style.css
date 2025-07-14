@@ -1,0 +1,89 @@
+body {
+font-family: Arial, sans-serif;
+background-color: #f0f2f5;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+margin: 0;
+}
+
+section { /* Usamos section como el contenedor principal del formulario de login */
+background-color: #fff;
+padding: 40px;
+border-radius: 8px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+width: 350px; /* Ancho ajustable */
+text-align: center;
+}
+
+h2 {
+font-size: 28px;
+margin-bottom: 30px;
+color: #333;
+text-align: center;
+}
+
+/* Estilos para las etiquetas */
+label {
+display: block; /* Cada etiqueta en su propia línea */
+text-align: left; /* Alinea el texto de la etiqueta a la izquierda */
+margin-bottom: 8px; /* Espacio debajo de la etiqueta */
+color: #555;
+font-weight: bold; /* Hace el texto de la etiqueta más prominente */
+font-size: 0.95em;
+}
+
+/* Estilos para los inputs de email y contraseña */
+input[type="email"],
+input[type="password"] {
+width: calc(100% - 20px); /* Ajusta el ancho para el padding */
+padding: 12px 10px;
+margin-bottom: 20px; /* Espacio debajo de cada input */
+border: 1px solid #ddd;
+border-radius: 5px;
+font-size: 16px;
+box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+border-color: #7b68ee; /* Color morado al enfocar */
+outline: none;
+box-shadow: 0 0 0 3px rgba(123, 104, 238, 0.2);
+}
+
+/* Estilos para el botón de "Entrar" */
+#loginBtn { /* Usamos el ID del botón */
+width: 100%;
+padding: 15px;
+background-color: #7b68ee; /* Color morado */
+color: white;
+border: none;
+border-radius: 5px;
+font-size: 18px;
+font-weight: bold;
+cursor: pointer;
+transition: background-color 0.3s ease;
+margin-top: 10px; /* Espacio superior para separar del último input */
+}
+
+#loginBtn:hover {
+background-color: #6a5acd; /* Morado ligeramente más oscuro al pasar el mouse */
+}
+
+/* Estilos para el botón/enlace de "Registrate aquí" */
+#register { /* Usamos el ID del botón */
+background: none; /* Sin fondo */
+border: none; /* Sin borde */
+color: #7b68ee; /* Color morado para que parezca un enlace */
+cursor: pointer;
+font-size: 1em;
+margin-top: 20px; /* Espacio superior para separarlo del botón de Entrar */
+text-decoration: underline; /* Subrayado para indicar que es un enlace */
+transition: color 0.3s ease;
+}
+
+#register:hover {
+color: #6a5acd; /* Morado más oscuro al pasar el mouse */
+}
